@@ -1,0 +1,24 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: student-management
+
+  # MySQL Database Connection Configuration
+  datasource:
+    url: jdbc:mysql://localhost:3306/student_db?createDatabaseIfNotExist=true&useSSL=false&allowPublicKeyRetrieval=true&serverTimezone=UTC
+    username: ${DB_USERNAME:root}
+    password: ${DB_PASSWORD:root}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  # JPA / Hibernate Configuration
+  jpa:
+    hibernate:
+      # 'update' automatically creates/updates the 'students' table based on @Entity annotations
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect

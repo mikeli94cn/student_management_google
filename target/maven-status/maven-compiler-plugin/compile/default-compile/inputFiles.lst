@@ -1,0 +1,12 @@
+/home/mikeli94/code/student_management_google/src/main/java/com/example/studentmanagement/StudentManagementApplication.java
+/home/mikeli94/code/student_management_google/src/main/java/com/example/studentmanagement/controller/StudentController.java
+/home/mikeli94/code/student_management_google/src/main/java/com/example/studentmanagement/dto/StudentRequestDto.java
+/home/mikeli94/code/student_management_google/src/main/java/com/example/studentmanagement/dto/StudentResponseDto.java
+/home/mikeli94/code/student_management_google/src/main/java/com/example/studentmanagement/entity/Student.java
+/home/mikeli94/code/student_management_google/src/main/java/com/example/studentmanagement/exception/DuplicateResourceException.java
+/home/mikeli94/code/student_management_google/src/main/java/com/example/studentmanagement/exception/ErrorResponse.java
+/home/mikeli94/code/student_management_google/src/main/java/com/example/studentmanagement/exception/GlobalExceptionHandler.java
+/home/mikeli94/code/student_management_google/src/main/java/com/example/studentmanagement/exception/ResourceNotFoundException.java
+/home/mikeli94/code/student_management_google/src/main/java/com/example/studentmanagement/repository/StudentRepository.java
+/home/mikeli94/code/student_management_google/src/main/java/com/example/studentmanagement/service/StudentService.java
+/home/mikeli94/code/student_management_google/src/main/java/com/example/studentmanagement/service/impl/StudentServiceImpl.java
