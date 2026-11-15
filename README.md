@@ -61,7 +61,7 @@ student_management_google/
 1. **Prepare MySQL**:
    Make sure your local MySQL server is running on port `3306`, or run `sql/schema.sql`:
    ```sql
-   CREATE DATABASE IF NOT EXISTS student_db;
+   CREATE DATABASE IF NOT EXISTS student_db_google;
    ```
    *(Note: `createDatabaseIfNotExist=true` and `ddl-auto: update` are enabled in `src/main/resources/application.yml`, so Hibernate will automatically create the database and `students` table on startup!)*
 
@@ -78,11 +78,11 @@ student_management_google/
 
 ## 3. REST API Endpoints & Sample `curl` Requests
 
-Base URL: `http://localhost:8080/api/v1/students`
+Base URL: `http://localhost:8083/api/v1/students`
 
 ### 1) Create a Student (`POST /api/v1/students`)
 ```bash
-curl -X POST http://localhost:8080/api/v1/students \
+curl -X POST http://localhost:8083/api/v1/students \
   -H "Content-Type: application/json" \
   -d '{
     "firstName": "Alice",
@@ -97,20 +97,20 @@ curl -X POST http://localhost:8080/api/v1/students \
 ### 2) Get All Students (`GET /api/v1/students`)
 ```bash
 # Get all students
-curl http://localhost:8080/api/v1/students
+curl http://localhost:8083/api/v1/students
 
 # Filter by major
-curl "http://localhost:8080/api/v1/students?major=Computer%20Science"
+curl "http://localhost:8083/api/v1/students?major=Computer%20Science"
 ```
 
 ### 3) Get Student by ID (`GET /api/v1/students/{id}`)
 ```bash
-curl http://localhost:8080/api/v1/students/1
+curl http://localhost:8083/api/v1/students/1
 ```
 
 ### 4) Update a Student (`PUT /api/v1/students/{id}`)
 ```bash
-curl -X PUT http://localhost:8080/api/v1/students/1 \
+curl -X PUT http://localhost:8083/api/v1/students/1 \
   -H "Content-Type: application/json" \
   -d '{
     "firstName": "Alice",
@@ -124,5 +124,5 @@ curl -X PUT http://localhost:8080/api/v1/students/1 \
 
 ### 5) Delete a Student (`DELETE /api/v1/students/{id}`)
 ```bash
-curl -X DELETE http://localhost:8080/api/v1/students/1
+curl -X DELETE http://localhost:8083/api/v1/students/1
 ```
